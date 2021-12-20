@@ -1,10 +1,10 @@
 class MuseumsController < ApplicationController
   def index
-    @museums = Musuem.all
+    @museums = Museum.all
   end
 
   def show
-    @museum = Musuem.find(museum_params)
+    @museum = Museum.find(museum_params)
   end
 
   private
